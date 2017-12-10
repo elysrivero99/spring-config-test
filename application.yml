@@ -1,3 +1,9 @@
 eureka:
-  instance:
-    non-secure-port: 8761
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    eurekaServerDNSName: yopter.vpc
+    eurekaServerPort: ${server.port}
+    eurekaServerURLContext: eureka
+    useDnsForFetchingServiceUrls: true
+    region: us-east-2
