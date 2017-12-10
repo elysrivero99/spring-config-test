@@ -3,7 +3,7 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
     eurekaServerDNSName: yopter.vpc
-    eurekaServerPort: ${server.port}
+    eurekaServerPort: 8761
     eurekaServerURLContext: eureka
     useDnsForFetchingServiceUrls: true
     region: us-east-2
