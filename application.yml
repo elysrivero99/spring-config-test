@@ -2,10 +2,5 @@ eureka:
   instance:
     preferIpAddress: true
   client:
-    registerWithEureka: true
-    fetchRegistry: true
-    eurekaServerDNSName: yopter.vpc
-    eurekaServerPort: 8761
-    eurekaServerURLContext: eureka
-    useDnsForFetchingServiceUrls: true
-    region: us-east-2
+    serviceUrl:
+      defaultZone:  http://127.0.0.1:8761/eureka/
